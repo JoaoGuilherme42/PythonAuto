@@ -74,9 +74,9 @@ if(num1 == 1):
         hospdScreen.save(
             r'.\PrintsImpressoras\Copier\Numero de serie e contador da impressora da Ala Masculina SUS.png')
         webbrowser.open('http://192.168.0.178/sws/index.html')
-        pyautogui.press('', interval=5)
-        pyautogui.click(x=360, y=175, interval=2)
-        pyautogui.click(x=100, y=335, interval=2)
+        pyautogui.press('', interval=7)
+        pyautogui.click(x=360, y=175, interval=3)
+        pyautogui.click(x=100, y=335, interval=3)
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\Copier\Numero de serie e contador da impressora do Dr Antonio.png')
