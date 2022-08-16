@@ -67,8 +67,15 @@ if(num1 == 1):
     hospdScreen = pyautogui.screenshot()
     hospdScreen.save(
         r'.\PrintsImpressoras\Numero de serie e contador da impressora da Ala Masculina SUS.png')
+    webbrowser.open('http://192.168.0.178/sws/index.html')
+    pyautogui.press('', interval=5)
+    pyautogui.click(x=360, y=175, interval=2)
+    pyautogui.click(x=100, y=335, interval=2)
+    hospdScreen = pyautogui.screenshot()
+    hospdScreen.save(
+        r'.\PrintsImpressoras\Numero de serie e contador da impressora do Dr Antonio.png')
 elif(num1 == 2):
-    num = int(pyautogui.prompt(text='Você escolheu tirar o print de UMA impressora, escolha:\nDepartamento Pessoal: 1 \nRecepcao Recanto: 2 \nFarmacia: 3\nAmbulatório: 4\nChefia da Enfermagem: 5\nFinanceiro: 6\nPsicologia SUS: 7\nEletroencefalograma: 8\nAlmoxarifado: 9\nHospital Dia: 10\nSUS Feminino: 11\nSUS Masculino: 12', title='Developed by JoaoGuilherme', default='0'))
+    num = int(pyautogui.prompt(text='Você escolheu tirar o print de UMA impressora, escolha:\nDepartamento Pessoal: 1 \nRecepcao Recanto: 2 \nFarmacia: 3\nAmbulatório: 4\nChefia da Enfermagem: 5\nFinanceiro: 6\nPsicologia SUS: 7\nEletroencefalograma: 8\nAlmoxarifado: 9\nHospital Dia: 10\nSUS Feminino: 11\nSUS Masculino: 12\nDr. Antônio: 13', title='Developed by JoaoGuilherme', default='0'))
     if(num == 1):
         webbrowser.open('http://192.168.0.210/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
@@ -130,17 +137,27 @@ elif(num1 == 2):
         hospdScreen.save(
             r'.\PrintsImpressoras\Numero de serie e contador da impressora do Hospital Dia.png')
     elif(num == 11):
-        webbrowser.open('http://192.168.0.128/general/information.html?kind=item')
+        webbrowser.open(
+            'http://192.168.0.128/general/information.html?kind=item')
         pyautogui.press('', interval=3)
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\Numero de serie e contador da impressora da Ala Feminina SUS.png')
     elif(num == 12):
-        webbrowser.open('http://192.168.0.131/general/information.html?kind=item')
+        webbrowser.open(
+            'http://192.168.0.131/general/information.html?kind=item')
         pyautogui.press('', interval=3)
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\Numero de serie e contador da impressora da Ala Masculina SUS.png')
+    elif(num == 13):
+        webbrowser.open('http://192.168.0.178/sws/index.html')
+        pyautogui.press('', interval=3)
+        pyautogui.click(x=360, y=175, interval=1)
+        pyautogui.click(x=100, y=335, interval=1)
+        hospdScreen = pyautogui.screenshot()
+        hospdScreen.save(
+            r'.\PrintsImpressoras\Numero de serie e contador da impressora do Dr Antonio.png')
     else:
         pyautogui.alert(
             text='Você digitou um número inválido\nFeche o programa e inicie novamente', title='Developed by JoaoGuilherme', button='Ok')
