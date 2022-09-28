@@ -1,7 +1,9 @@
+from turtle import title
 import pyautogui
 import time
 import os
 import webbrowser
+import pymsgbox
 
 num1 = int(pyautogui.prompt(text='Você deseja tirar um print de TODAS as impressoras por contrato ou individual?\nDigite 1 para TODAS\nDigite 2 para INDIVIDUAL',
            title='Developed by JoaoGuilherme'))
@@ -173,3 +175,5 @@ elif(num1 == 2):
 else:
     pyautogui.alert(
         text='Você digitou um número inválido\nFeche o programa e inicie novamente', title='Developed by JoaoGuilherme', button='Ok')
+
+pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
