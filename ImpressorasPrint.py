@@ -62,6 +62,7 @@ if(num1 == 1):
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora do Hospital Dia.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num2 == 2):
         webbrowser.open(
             'http://192.168.0.128/general/information.html?kind=item')
@@ -82,6 +83,7 @@ if(num1 == 1):
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\Copier\Numero de serie e contador da impressora do Dr Antonio.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     else:
         pyautogui.alert(
             text='Você digitou um número inválido\nFeche o programa e inicie novamente', title='Developed by JoaoGuilherme', button='Ok')
@@ -93,60 +95,70 @@ elif(num1 == 2):
         dptoScreen = pyautogui.screenshot()
         dptoScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora do Departamento Pessoal.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 2):
         webbrowser.open('http://192.168.0.211/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         recepScreen = pyautogui.screenshot()
         recepScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora da Recepção do Recanto.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 3):
         webbrowser.open('http://192.168.0.213/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         farmaScreen = pyautogui.screenshot()
         farmaScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora da Farmácia.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 4):
         webbrowser.open('http://192.168.0.214/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         ambuScreen = pyautogui.screenshot()
         ambuScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora do Ambulatório.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 5):
         webbrowser.open('http://192.168.0.215/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         chefScreen = pyautogui.screenshot()
         chefScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora da Chefia de Enfermagem.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 6):
         webbrowser.open('http://192.168.0.220/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         finanScreen = pyautogui.screenshot()
         finanScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora do Financeiro.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 7):
         webbrowser.open('http://192.168.0.221/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         psicoScreen = pyautogui.screenshot()
         psicoScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora da Psicologia SUS.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 8):
         webbrowser.open('http://192.168.0.222/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         eletroScreen = pyautogui.screenshot()
         eletroScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora do Eletroencefalograma.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 9):
         webbrowser.open('http://192.168.0.223/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         almoxScreen = pyautogui.screenshot()
         almoxScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora do Almoxarifado.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 10):
         webbrowser.open('http://192.168.0.224/#hId-pgDevInfo')
         pyautogui.press('', interval=3)
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\H2L\Numero de serie e contador da impressora do Hospital Dia.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 11):
         webbrowser.open(
             'http://192.168.0.128/general/information.html?kind=item')
@@ -154,6 +166,7 @@ elif(num1 == 2):
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\Copier\Numero de serie e contador da impressora da Ala Feminina SUS.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 12):
         webbrowser.open(
             'http://192.168.0.131/general/information.html?kind=item')
@@ -161,6 +174,7 @@ elif(num1 == 2):
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\Copier\Numero de serie e contador da impressora da Ala Masculina SUS.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     elif(num == 13):
         webbrowser.open('http://192.168.0.178/sws/index.html')
         pyautogui.press('', interval=3)
@@ -169,11 +183,14 @@ elif(num1 == 2):
         hospdScreen = pyautogui.screenshot()
         hospdScreen.save(
             r'.\PrintsImpressoras\Copier\Numero de serie e contador da impressora do Dr Antonio.png')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
     else:
         pyautogui.alert(
             text='Você digitou um número inválido\nFeche o programa e inicie novamente', title='Developed by JoaoGuilherme', button='Ok')
+        pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
 else:
     pyautogui.alert(
         text='Você digitou um número inválido\nFeche o programa e inicie novamente', title='Developed by JoaoGuilherme', button='Ok')
+    pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
 
 pymsgbox.alert(text='Prints tirados com sucesso', title='Finalizado', button='ok')
